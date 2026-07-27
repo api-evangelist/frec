@@ -1,0 +1,14 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/ on frec.com
+host: https://frec.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+notes: >-
+  Frec is a consumer investing app with no public developer API surface. No
+  /.well-known/ discovery documents are published (probed 2026-07-19). Empty is
+  a valid, expected result — recorded for auditability; no WellKnown/SecurityTxt
+  pointer emitted.

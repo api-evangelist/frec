@@ -1,7 +1,16 @@
 aid: frec
 name: Frec
-description: 'Frec is a company surfaced as a portfolio company of greylock and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Frec is a San Francisco fintech offering tax-aware, automated direct indexing
+  for retail investors. Its products — Classic Direct Indexing, Long Short Direct
+  Indexing, Diversify, Trade, Treasury cash management, and a Portfolio Line of
+  Credit — replicate market indices with individual stocks while running
+  automated tax-loss harvesting to minimize capital gains taxes at fees starting
+  around 0.09%. Frec is an SEC-registered investment adviser and SIPC member
+  managing over $1.25B in assets, founded by Mo Al Adham and backed by Greylock.
+  The company ships a consumer investing app and website but does not currently
+  expose a public developer API, so this profile is identity- and
+  security-posture-only.
 url: https://raw.githubusercontent.com/api-evangelist/frec/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +18,29 @@ x-backed-by:
 - greylock
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://frec.com/webstatic/svg/logo.svg
 tags:
 - Company
 - Fintech
+- Investing
+- Wealth Management
+- Direct Indexing
+- Tax Optimization
+- Brokerage
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/frec-domain-security.yml
 - type: Website
   url: https://frec.com/
+- type: Pricing
+  url: https://frec.com/pricing
+- type: Blog
+  url: https://frec.com/resources
+- type: Support
+  url: https://help.frec.com/
+- type: TermsOfService
+  url: https://frec.com/terms
+- type: PrivacyPolicy
+  url: https://frec.com/privacy
+- type: About
+  url: https://frec.com/about
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
