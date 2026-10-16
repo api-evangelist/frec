@@ -2,6 +2,13 @@
   "repo": "frec",
   "feeds": [
     {
+      "source": "https://frec.com/resources",
+      "feed_url": "https://frec.com/resources",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://frec.com/pricing",
       "feed_url": "https://frec.com/pricing",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
